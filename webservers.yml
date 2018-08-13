@@ -1,7 +1,8 @@
 ---
-- name: install tomcat role
+- name: install webservers
   hosts: all
   become: yes
   remote_user: babu
   roles:
      - tomcat
+     - babu.apache

@@ -1,0 +1,9 @@
+---
+# tasks file for babu.apache
+- name: install httpd
+  package: name=httpd state=present
+- name: copy thee html page
+  copy: src=index.html dest=/var/www/html/
+- name: copy the configure file
+  copy: src=httpd.conf dest=/etc/httpd/conf/
+  notify: start apache

@@ -1,0 +1,4 @@
+---
+# handlers file for babu.apache
+- name: start apache
+  service: name=httpd state=restarted
