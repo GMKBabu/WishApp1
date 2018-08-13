@@ -4,5 +4,5 @@
   become: yes
   remote_user: babu
   roles:
-     - tomcat
+     - babu.tomcat
      - babu.apache
